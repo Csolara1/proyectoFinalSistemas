@@ -48,7 +48,7 @@ if (request.getMethod().equalsIgnoreCase("POST")) {
 
 try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
+	conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
 	String alumnosQuery = "SELECT alumnoID, alumnoNombre, alumnoApellido FROM alumnos";
 	pstmt = conn.prepareStatement(alumnosQuery);
 	rs = pstmt.executeQuery();

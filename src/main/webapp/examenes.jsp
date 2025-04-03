@@ -15,7 +15,7 @@ if (examenIDStr == null || examenIDStr.isEmpty()) {
 } else {
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
+		conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
 
 		System.out.println("examenID recibido: " + examenIDStr);
 
