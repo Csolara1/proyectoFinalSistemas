@@ -10,7 +10,7 @@
     
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
+        conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
         
         String queryAlumnos = "SELECT * FROM alumnos";
         pstmtAlumnos = conn.prepareStatement(queryAlumnos);
@@ -123,7 +123,7 @@ button:hover {
 				<%
                     while (rsExamenes.next()) {
                         int examenID = rsExamenes.getInt("examenID");
-                        String descripcionExamen = rsExamenes.getString("descripcion");  // Asumimos que la columna es 'descripcion'
+                        String descripcionExamen = rsExamenes.getString("descripcion");
                 %>
 				<option value="<%= examenID %>"><%= descripcionExamen %></option>
 				<%

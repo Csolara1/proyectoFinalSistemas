@@ -15,7 +15,7 @@ if (request.getMethod().equalsIgnoreCase("POST")) {
 	int alumnoID = Integer.parseInt(alumnoIDStr);
 
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
+	conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
 
 	String deleteNotasQuery = "DELETE FROM notas WHERE alumnoID = ?";
 	pstmt = conn.prepareStatement(deleteNotasQuery);
@@ -48,7 +48,7 @@ if (request.getMethod().equalsIgnoreCase("POST")) {
 
 try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
+	conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
 	String alumnosQuery = "SELECT alumnoID, alumnoNombre, alumnoApellido FROM alumnos";
 	pstmt = conn.prepareStatement(alumnosQuery);
 	rs = pstmt.executeQuery();

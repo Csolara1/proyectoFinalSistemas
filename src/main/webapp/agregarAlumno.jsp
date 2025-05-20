@@ -11,7 +11,7 @@ PreparedStatement pstmt = null;
 
 try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
+	conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
 
 	if (nombre != null && apellido != null && descripcion != null && fechaNacimiento != null) {
 		String sql = "INSERT INTO alumnos (alumnoNombre, alumnoApellido, descripcion, fechaNacimiento) VALUES (?, ?, ?, ?)";

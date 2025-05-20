@@ -14,7 +14,7 @@ public class beanDB {
     //----- Metodo que realiza la conexion a la BD
     public void conectarBD() throws SQLException, InstantiationException, IllegalAccessException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-        cn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
+        cn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
     }
 
     //----- Método que realiza la desconexión de la BD

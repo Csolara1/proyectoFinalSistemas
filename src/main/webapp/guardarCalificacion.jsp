@@ -14,7 +14,7 @@ if (calificacion < 1.00 || calificacion > 10.00) {
 	PreparedStatement pstmt = null;
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
+		conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
 
 		String checkQuery = "SELECT * FROM notas WHERE alumnoID = ? AND examenID = ?";
 		pstmt = conn.prepareStatement(checkQuery);

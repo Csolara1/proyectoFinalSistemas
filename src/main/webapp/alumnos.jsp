@@ -14,7 +14,7 @@ if ("asc".equals(orderBy)) {
 
 try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection("jdbc:mysql://host/TRABAJOFINAL", "user", "password%");
+	conn = DriverManager.getConnection("jdbc:mysql://172.190.114.187/TRABAJOFINAL", "adan", "Altair123$%");
 
 	stmt = conn.createStatement();
 	rs = stmt.executeQuery(query);

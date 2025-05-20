@@ -1,7 +1,9 @@
 package mipk;
 
 import java.io.IOException;
+
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -11,6 +13,7 @@ import jakarta.servlet.http.HttpSession;
 /**
  * Servlet implementation class LoginAuthenticator
  */
+@WebServlet("/LoginAuthenticator")
 public class LoginAuthenticator extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String usuvalido = "admin";
@@ -18,7 +21,7 @@ public class LoginAuthenticator extends HttpServlet {
 	private String usuvalido1 = "pepe";
 	private String pwdvalida1 = "1234";
 	private String usuvalido2 = "toor";
-	private String pwdvalida2 = "1234";
+	private String pwdvalida2 = "1234";	
        
     /**
      * @see HttpServlet#HttpServlet()
